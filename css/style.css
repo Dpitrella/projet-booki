@@ -26,6 +26,9 @@ body {
 .fil1 .fa-solid {
     margin: 10px;
 }
+.filtres .fa-solid {
+    margin-right: 10px;
+}
 h1 {
     font-size: 25px;
 }
@@ -205,16 +208,17 @@ a {
     gap: 50px;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-left: 20px;
-}
-.cards {
-    width: 270px;
-}
-.hebergements-cards a {
-    width: 250px;
-    height: 260px;
+  
+    justify-content: space-around;
     
 }
+.hebergements-cards a {
+    width: calc(33% - 40px) ;
+    height: 260px;
+}
+
+    
+
 .hebergements article {
     background-color: white;
     border-radius: 20px;
@@ -288,7 +292,7 @@ a {
     border-top-right-radius: 20px;
 }
 .activites .card-title {
-    padding-top: 25px;
+    padding-top: 15px;
 
 }
 .activites-card {
@@ -308,22 +312,17 @@ a {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    margin-top: 40px;
-    padding-bottom: 40px;
-    padding-top: 3px;
+    margin-top: 40px;  
 }
 .a-propos  {
-    margin-top: 20px;
     margin-right: 200px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .nos-hebergements {
-    margin-top: 20px;
     margin-right: 200px;
     
 }
 .assistance {
-    margin-top: 20px;
     margin-right: 40px;
     
 }
@@ -331,6 +330,9 @@ footer ul{
     list-style-type: none;
     padding-left: 0;
     gap: 50px;
+}
+li {
+    margin-bottom: 20px;
 }
 
 
@@ -371,7 +373,11 @@ footer ul{
     }
     .hebergements-cards {
         gap: 15px;
+        
+        
+
     }
+ 
     .populaires {
         width: 100%;
         height: auto;
@@ -400,18 +406,25 @@ footer ul{
         height: 190px;
     }
     .activites-card {
-        height: 260px;
+        height: 90%;
     }
-
+    .a-propos {
+        margin-left: 10px;
+        margin-right: 100px;
+        padding: 0;
+    }
+    .nos-hebergements {
+     margin-right: 100px;
+    }
    
 
-   
+
 
 }
 
 /* Small devices (phones, less than 768px) */
 
-@media (max-width: 767.98px) and (min-width: 320px) {
+@media (max-width: 767.98px)  {
 
     .main-container {
         width: 100%;
@@ -434,22 +447,27 @@ footer ul{
     }
     .heber-act-nav {
         display: flex;
+        justify-content: space-around;
         width: 100%;
-        gap: 50px;
     }
     .heberg_color {
         color: #0065FC;
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        width: 180px;
+        width: 50%;
         height: 50%;
-        margin-left: 0%;
+        
+    }
+    .activ-color {
+        border-bottom: 2px solid #F2F2F2;
+        width: 50%;
+        
     }
     .s1 {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: 20px;
+        padding: 20px;
     }
     form {
         display: flex;
@@ -468,7 +486,7 @@ footer ul{
     .btn {
         margin-left: 0;
         margin-top: 20px;
-        width: 170px;
+        width: calc(50% - 10px);
         height: 60px;  
     }
     .fa-info {
@@ -494,11 +512,15 @@ footer ul{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
+        padding-left: 20px;
         
     }
+    .section-title {
+        padding-left: 20px;
+    }
     .cards {
-       width: 310px;
+       width: 400%;
     }
     .pop-back {
         background-color: #F2F2F2;
@@ -509,14 +531,18 @@ footer ul{
         order: 1;  
         background-color: #F2F2F2;     
     }
+    .populaires-title {
+        padding-left: 20px;
+    }
     .populaires-cards {
         display: flex;
         flex-direction: column;
+        padding-left: 20px;
         
     }
     .card {
         display: flex;
-        width: 300px;
+        width: 280%;
     }
     .activites-titre {
         margin-left: 45px;
@@ -524,19 +550,24 @@ footer ul{
     .activites {
         display: flex;
         flex-direction: column;
-        margin-left: 25px;
+        margin-left: 40px;
+        gap: 10px;
     }
 
     .activites-card {
-        width: 310px; 
+        width: 280%; 
         gap: 20px;  
     }
 
     footer {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
-
+    .a-propos {
+        margin-left: 40px;
+        padding: 0;
+    }
     .nos-hebergements {
         margin-left: 40px;
     }
