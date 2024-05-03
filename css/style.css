@@ -253,7 +253,7 @@ a {
 }
 .populaires-cards .card {
     display: flex;
-    margin-top: 55px;
+    margin-top: 30px;
     
 }
 .populaires-cards .card-content {
@@ -568,10 +568,8 @@ li {
         margin-left: 40px;
         padding: 0;
     }
-    .nos-hebergements {
+    .footer-mob {
         margin-left: 40px;
     }
-    .assistance {
-        margin-left: 40px;
-    }
+   
 }
