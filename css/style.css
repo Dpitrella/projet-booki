@@ -1,6 +1,6 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', ans-serif;
 }
 
 :root {
@@ -88,12 +88,16 @@ form button {
     height: 45px;
     border-radius: 15px 0px 0px 15px;
 }
+
 form input {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #F2F2F2;
     border-left: 0 ;
     border-right: 0;
+}
+.rech {
+    width: 30%;
 }
 .search-mobile-icon {
     display: none;
@@ -126,13 +130,17 @@ color: white;
     background-color: #DEEBFF;
 }
 
-.fa-info {
+.info-icon {
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border: 2px solid ;
     border-color:  #F2F2F2;
-    padding: 6px 13px;
-    border-radius: 15px ;
+    width: 10px;
+    height: 10px;
+    padding: 14px;
+    border-radius: 50% ;
     margin: 10px;
 }
 .info { 
@@ -373,10 +381,8 @@ li {
     }
     .hebergements-cards {
         gap: 15px;
-        
-        
-
     }
+   
  
     .populaires {
         width: 100%;
@@ -466,12 +472,15 @@ li {
     .s1 {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
-        padding: 20px;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
     }
     form {
         display: flex;
         justify-content: space-around;
+        width: 95%;
+        margin-left: 9px;
+        
     }
     .search-icon {
         display: none;
@@ -479,15 +488,27 @@ li {
     .search-mobile-icon {
         display: block;
     }
+    .rech {
+        width: 100%;
+    }
     .filtres {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        padding-top: 0;
+        
     }
     .btn {
         margin-left: 0;
         margin-top: 20px;
         width: calc(50% - 10px);
         height: 60px;  
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+        width: 90%;
     }
     .fa-info {
         height: 20px;
@@ -496,6 +517,7 @@ li {
         display: flex;
         flex-direction: column;
         background: none; 
+        padding-right: 35px;
     }
     .heber-back {
         display: flex;
@@ -512,15 +534,17 @@ li {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 30px;
-        padding-left: 20px;
+        width: 100%;
         
+    }
+    .hebergements-cards .cards {
+        width: 460%;
     }
     .section-title {
         padding-left: 20px;
     }
     .cards {
-       width: 400%;
+       width: 350%;
     }
     .pop-back {
         background-color: #F2F2F2;
@@ -528,6 +552,7 @@ li {
     .populaires {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
         order: 1;  
         background-color: #F2F2F2;     
     }
@@ -537,26 +562,28 @@ li {
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
+        width: 100%;
+        gap: px;
         
     }
     .card {
         display: flex;
-        width: 280%;
+        width: 330%;
     }
-    .activites-titre {
-        margin-left: 45px;
+    .activites-a-marselle {
+        margin: 30px;
     }
+    
     .activites {
         display: flex;
         flex-direction: column;
-        margin-left: 40px;
+        
         gap: 10px;
     }
 
     .activites-card {
-        width: 280%; 
-        gap: 20px;  
+        width: 330%; 
+        
     }
 
     footer {
