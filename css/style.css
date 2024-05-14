@@ -64,8 +64,9 @@ header nav {
     font-size: 16px;
 }
 form {
-    display: inline-flex;
+    
     display: flex;
+    
     margin: 30px 0 30px 0;
 }
 
@@ -96,8 +97,11 @@ form input {
     border-left: 0 ;
     border-right: 0;
 }
+#site-search {
+    width: 200px;
+}
 .rech {
-    width: 30%;
+    width: 35%;
 }
 .search-mobile-icon {
     display: none;
