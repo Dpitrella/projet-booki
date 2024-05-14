@@ -252,18 +252,24 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 150px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .populaires-cards .card {
     display: flex;
-    margin-top: 30px;
-    
 }
+
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -517,7 +523,7 @@ li {
         display: flex;
         flex-direction: column;
         background: none; 
-        padding-right: 35px;
+        margin-top: 0px;
     }
     .heber-back {
         display: flex;
@@ -540,9 +546,7 @@ li {
     .hebergements-cards .cards {
         width: 460%;
     }
-    .section-title {
-        padding-left: 20px;
-    }
+    
     .cards {
        width: 350%;
     }
@@ -552,23 +556,26 @@ li {
     .populaires {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        justify-content: space-between;
         order: 1;  
         background-color: #F2F2F2;     
     }
-    .populaires-title {
-        padding-left: 20px;
+    .populaires-title{
+        margin-bottom: 20px;
     }
     .populaires-cards {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: px;
+        gap: 30px;
+        
+        
         
     }
     .card {
         display: flex;
         width: 330%;
+        
     }
     .activites-a-marselle {
         margin: 30px;
